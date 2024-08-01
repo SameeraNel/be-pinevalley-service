@@ -1,0 +1,9 @@
+apiVersion: core.choreo.dev/v1beta1
+kind: ComponentConfig
+spec:
+  inbound:
+    - name: be-pinevalley-service
+      context: /
+      type: REST
+      port: 9091
+      networkVisibility: Public
